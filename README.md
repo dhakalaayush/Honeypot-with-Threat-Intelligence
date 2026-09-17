@@ -4,4 +4,4 @@ This system captures malicious login attempts and unauthorized HTTP requests via
 
 ## Architecture
 
-![Block Diagram](Images/Block_diagram.svg)
+![Block Diagram](Design/Block_diagram.svg)
