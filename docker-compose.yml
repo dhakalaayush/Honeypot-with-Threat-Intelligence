@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  grafana:
+    image: grafana/grafana-enterprise:latest
+    container_name: honeypot_grafana
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_PLUGINS_PREINSTALL=frser-sqlite-datasource
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./honeypot.db:/var/lib/grafana/honeypot.db
+    user: "0"
