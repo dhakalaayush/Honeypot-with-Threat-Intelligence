@@ -5,3 +5,17 @@ This system captures malicious login attempts and unauthorized HTTP requests via
 ## Architecture
 
 ![Block Diagram](Design/Block_diagram.svg)
+
+## Deployment
+
+Install requirements
+
+    pip install -r requirements.txt
+
+Initialize database
+
+    python database.py
+
+Run the server
+
+    python server.py
