@@ -40,8 +40,3 @@ def check_ip_reputation(ip_address):
     except requests.exceptions.RequestException as e:
         print(f"[!] API Request failed: {e}")
         return None
-
-# Quick test for a known malicious IP (or a random one like 8.8.8.8)
-if __name__ == "__main__":
-    test_ip = "118.25.6.39" 
-    check_ip_reputation(test_ip)
